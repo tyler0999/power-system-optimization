@@ -52,17 +52,14 @@ $$
 $$
 where
 
-$\mathbf{P}$     $N \times 1$ vector of bus active power injections for buses $1, …, N$    
-
-$\mathbf{B}$     $N \times N$ admittance matrix with $R = 0$  
-
-$\theta$      $N \times 1$ vector of bus voltage angles for buses $1, …, N$   
-
-$\mathbf{P_L}$  $M \times 1$ vector of branch flows ($M$ is the number of branches) 
-
-$\mathbf{b}$     $M \times M$ matrix ($b_{kk}$ is equal to the susceptance of line $k$ and non-diagonal elements are zero) 
-
-$\mathbf{A}$     $M \times N$ bus-branch incidence matrix
+|                | Descriptions                                                 |
+| -------------- | :----------------------------------------------------------- |
+| $\mathbf{P}$   | $N \times 1$ vector of bus active power injections for buses $1, …, N$ |
+| $\mathbf{B}$   | $N \times N$ admittance matrix with $R = 0$                  |
+| $\theta$       | $N \times 1$ vector of bus voltage angles for buses $1, …, N$ |
+| $\mathbf{P_L}$ | $M \times 1$ vector of branch flows ($M$ is the number of branches) |
+| $\mathbf{b}$   | $M \times M$ matrix ($b_{kk}$ is equal to the susceptance of line $k$ and non-diagonal elements are zero) |
+| $\mathbf{A}$   | $M \times N$ bus-branch incidence matrix                     |
 
 ​	Each diagonal element of $B$ (i.e. $B_{ii}$) is the sum of the reciprocal of the lines reactances connected to bus $i$. The off-diagonal element (i.e. $B_{ij}$) is the negative sum of the reciprocal of the lines reactances between bus $i$ and bus $j$. 
 
