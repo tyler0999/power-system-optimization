@@ -1,5 +1,5 @@
 #  Power System Optimization
-## This is  **ABSOLUTELY** a preview !
+## This is  an ABSOLUTE  preview !
 > Version：0.0.1  
 > Author：itaoxiaoran  
 > E-mail：ta0ran@163.com  
@@ -8,7 +8,7 @@
 
  >**About me** : Hello, My name is **ran**. I'm a student researching on power system optimization and deep reinforcement learing.
  >
- >​	I wish to share with you some works (theories, codes, etc.) in my usual study through this project. This repository is named "power system optimization" mainly to distinguish it from other fields of power system, such as stability analysis, power electronics, etc. I believe that you can see some methods or algorithm in literature reading, but you don't know how to use the program to achieve them. I will share what I have achieved in the form of "detailed descriptions + codes" to you, so as to avoid to reinvent wheels repeatedly.
+ >​	I would like to share some works (theories, codes, etc.) in my usual study through this project. This repository is named "power system optimization" mainly to distinguish it from other fields of power system, such as stability analysis, power electronics, etc. I believe that you can see some methods or algorithm in literature reading, but you didn't know how to use the program to achieve them. I will share what I have achieved in the form of "detailed descriptions + codes" to you, so as to avoid to reinvent wheels repeatedly.
  >
  >​	**Welcome to discuss with me~** :smile:
 
