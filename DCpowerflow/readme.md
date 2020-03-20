@@ -20,8 +20,6 @@ When you do not care the reactive power or voltage amplitude, the <u>DC Power Fl
 
 ## DC Power Flow Model
 
-​	We can describe the transmission line as following:   
-
 ​	In DC Power Flow Model, nonlinear model of the AC system is simplified to a linear form through these assumptions:  
 
 • Line resistances (active power losses) are negligible i.e. $R<<X$ .  
