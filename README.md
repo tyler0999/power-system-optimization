@@ -23,4 +23,27 @@ Clearing joint energy and reserve market | Python             | 2020.8 |
 
 If you have other demands, you can **pull the Issues** or email me. Maybe I wrote them, but they haven't been sorted out, I will upload them~
 
+## Before use and read most page in this repository.
 
+If you cannot see the formula as following
+$$
+\left[\begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1 n} \\
+a_{21} & a_{22} & \cdots & a_{2 n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m 1} & a_{m 2} & \cdots & a_{m n}
+\end{array}\right]
+$$
+You'd better install the Chrome plugin:[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) to view the Latex formula normally.
+
+and, the code of this repository require the special module:
+
+1. [pyomo-the Pyomo optimization modeling software](https://github.com/Pyomo/pyomo)
+
+   `pip install pyomo`
+
+2. [geatpy-Evolutionary algorithm toolbox and framework with high performance for Python](https://github.com/geatpy-dev/geatpy)
+
+   `pip install geatpy`
+
+3. **Any Solvers** supported by Pyomo for solving LP problems, i.e. glpk, gurobi, cplex, etc.
