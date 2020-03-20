@@ -27,11 +27,7 @@ If you have other demands, you can **pull the Issues** or email me. Maybe I wrot
 
 If you cannot see the formula normally as following:
 $$
-\begin{aligned}
-P_{i j}+\mathrm{j} Q_{i j} &=\dot{V}_{i} \hat{I}_{i j}=\dot{V}_{i}\left(\hat{I}^{\prime}++\hat{I}^{\prime \prime}\right) \\
-&=\dot{V}_{i}\left[\hat{V}_{i}\left(G_{i 0}-\mathrm{j} B_{i 0}\right)+\left(\hat{V}_{i}-\hat{V}_{j}\right)\left(G_{i j}-j B_{i j}\right)\right] \\
-&=\dot{V}_{i}\left(\hat{V}_{i} G_{i 0}-\mathrm{j} \hat{V}_{i} B_{i 0}+\hat{V}_{i} G_{i j}-j \hat{V}_{i} B_{i j}-\hat{V}_{j} G_{i j}+j \hat{V}_{j} B_{i j}\right)
-\end{aligned}
+\frac{d c}{d x}+\mu \frac{d h}{d x}=0
 $$
 
 
