@@ -16,8 +16,8 @@ AC power flow| Python | 2020.5 |
 Multi-Obj optimal power flow | Python | 2020.5 |
 Transferring Matpower case to .csv | .csv               | 2020.4|
 A small amount of real active load data | .csv               | 2020.6 |
-Clearing uniform pricing electricity market | Python             | 2020.8 |
- Clearing nodal pricing electricity market | Python             | 2020.8 |
+Clearing uniform pricing market | Python             | 2020.8 |
+ Clearing nodal pricing market | Python             | 2020.8 |
 Clearing joint energy and reserve market | Python             | 2020.8 |
  My first Blog for this project | ——                 | May be blew your off |
 
