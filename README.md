@@ -1,31 +1,26 @@
-# 电力系统优化 - Power System Optimization
-## 这是一个预告
+#  Power System Optimization
+## This is a notice
 > Version：0.0.1  
 > Author：itaoxiaoran  
 > E-mail：ta0ran@163.com  
 
- My poor English does not support me to write this readme in English. 
- So, **我现在开始用中文**。  
- >**关于我**：大家好，我叫itaoxiaoran，我是一名研究电力系统优化的普通学生。
- 我想通过这个项目和大家分享一些我在平时的学习中的一些内容（理论，代码之类的）
- 这个项目命名为`电力系统-Power System Optimization`主要是想和电力系统的其他领域进行区分，
- 比如：稳定性分析，电力电子之类的。相信大家在平时的文献阅读中看到一些看似普通的方法却
->不知道如何用程序实现，我会把我已经实现的内容以“详细说明+代码”的形式分享给大家，避免大家重复造轮子。
->欢迎和我一起讨论、交流、完善项目~
+ >About me : Hello, my name is itaoxiaoran. I am just an ordinary student researching on power system optimization.
+ I wish to share with you some contents (theories, codes, etc.) in my usual study through this project. This project is named "power system optimization" mainly to distinguish it from other fields of power system, such as stability analysis, power electronics, etc. I believe that you can see some seemingly common methods in normal literature reading, but you don't know how to use the program to realize them. I will share what I have realized in the form of "detailed description + code" to you, so as to avoid you from making wheels repeatedly.
+ Welcome to discuss, exchange and improve the project with me~ 
 
-以下内容已经完成开发，正在等待整理和归纳  
-**功能** | **语言或文件格式** | **预计发布时间** | **实际发布时间** 
+The following functions have been developed and are waiting to be sorted out and summarized   
+Function | Programming language or file format| Expected release time | Actual release time 
 -|-|-|-
-直流潮流计算 | Python | 2020.5 | 
-交流潮流计算| Python | 2020.5 |
-多目标最优交流潮流 | Python | 2020.5 |
-Matpower case 转化成 .csv | .csv               | 2020.4|
-少量真实有功负荷数据 | .csv               | 2020.6 |
-电力市场统一电价出清 | Python             | 2020.8 |
- | Python             | 2020.8 |
-电力市场能量与备用市场联合出清 | Python             | 2020.8 |
- | ——                 | 有可能咕咕~ |
+DC power flow | Python | 2020.5 | 
+AC power flow| Python | 2020.5 |
+Multi-Obj optimal power flow | Python | 2020.5 |
+Transferring Matpower case to .csv | .csv               | 2020.4|
+A small amount of real active load data | .csv               | 2020.6 |
+Clearing uniform pricing electricity market | Python             | 2020.8 |
+ Clearing nodal pricing electricity market | Python             | 2020.8 |
+Clearing joint energy and reserve market | Python             | 2020.8 |
+ My first Blog for this project | ——                 | May be blew your off |
 
-如果，你们还有其他的需求，可以直接发Issues，也可以给我发邮件，说不定我写了，但是没有整理，我也会上传~
+If you have other demands, you can **pull the Issues** or email me. Maybe I wrote them, but they haven't been sorted out, I will upload them~
 
 
