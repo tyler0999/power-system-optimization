@@ -29,8 +29,8 @@
 The following functions have been developed and are waiting to be sorted out and summarized .  
 Functions | Programming Language or File Format | Expected Release Time | Actual Release Time 
 -|-|-|-
-DC power flow | Python | 03/2020 | 
-AC power flow| Python | 03/2020 |
+DC power flow | Python | 04/2020 | 
+AC power flow| Python | 04/2020 |
 DC optimal power flow| Python | 12/2020 |
 AC optimal power flow| Python | 12/2020               |
 Multi-objective optimal power flow | Python | 05/2020 |
@@ -72,19 +72,17 @@ $$
 
 ## Transferring Matpower case file to CSV format
 
-Start directly: [click here](https://github.com/itaoxiaoran/transfer-matpower-case-file)
-
-## DC Power Flow
-
 **HAVE BEEN DONE: 03/22 2020**
 
 the **Transferring Matpower Case File to CSV Foramt** can help you use the Matpower case file in Python.
 
-**getDataFrame.py** for get the data in Python
+> **getDataFrame.py** for get the data in Python  
+> **write2csv.m** for tansferring the case file to CSV format file  
+> **Required**: numpy, pandas, sys, MATLAB, Matpower    
 
-**write2csv.m** for for tansferring the case file to CSV format file
+Start directly: [click here](https://github.com/itaoxiaoran/transfer-matpower-case-file)
 
-**Required**: numpy, pandas, sys, MATLAB, Matpower
+## DC Power Flow
 
 Start directly: [click here](https://github.com/itaoxiaoran/dc-power-flow)
 
