@@ -1,10 +1,24 @@
 # Transferring Matpower Case File to .csv
 
-> Version: 0.0.1
-> Author: itaoxiaoran
-> E-mail: ta0ran@163.com
+> Version: 0.0.1  
+> Author: itaoxiaoran  
+> E-mail: ta0ran@163.com   
 
-[TOC]
+## Contents
+
+- [Introduction](#introduction)
+
+- [Matpower Data File Format](#matpower-data-file-format)
+
+- [File List](#file-list)
+
+- [Code List](#code-list)
+
+- [How to Use the Case File Data](#how-to-use-the-case-file-data)
+
+- [How to Transferring Matpower Case File to .csv by Yourself](#how-to-transferring-matpower-case-file-to-csv-by-yourself)
+
+- [Module Required](#module-required)
 
 ## Introduction
 
@@ -46,7 +60,7 @@ the **Transferring Matpower Case File to .csv** can help you use the Matpower ca
 | Qmax     | 4      | maximum reactive power output (MVAr)                         |
 | Qmin     | 5      | minimum reactive power output (MVAr)                         |
 | Vg       | 6      | voltage magnitude setpoint (p.u.)                            |
-| mBase    | 7      | total MVA base of machine, defaults to baseMVA<              |
+| mBase    | 7      | total MVA base of machine, defaults to baseMVA               |
 | status   | 8      | machine status, > 0 = machine in-service  ,≤ 0 = machine out-of-service |
 | Pmax     | 9      | maximum real power output (MW)                               |
 | Pmin     | 10     | minimum real power output (MW)                               |
@@ -74,44 +88,46 @@ the **Transferring Matpower Case File to .csv** can help you use the Matpower ca
 | rateA  | 6      | MVA rating A (long term rating), set to 0 for unlimited      |
 | rateB  | 7      | MVA rating B (short term rating), set to 0 for unlimited     |
 | rateC  | 8      | MVA rating C (emergency rating), set to 0 for unlimited      |
-| ratio  | 9      | transformer off nominal turns ratio, (taps at \from" bus, impedance at \to" bus, i.e. if $r = x = b = 0$, $tap =\frac{|V_f|}{|V_t|}$ |
+| ratio  | 9      | transformer off nominal turns ratio, (taps at "from" bus, impedance at "to" bus, i.e. if $r = x = b = 0$, $tap =\frac{|V_f|}{|V_t|}$ |
 | angle  | 10     | transformer phase shift angle (degrees), positive -> delay   |
 | status | 11     | initial branch status, 1 = in-service, 0 = out-of-service    |
-| angmin | 12     | minimum angle difference, $\theta_{f}-\theta_{t}$(degrees)   |
+| angmin | 12     | minimum angle difference, $\theta_{f}-\theta_{t}$ (degrees)  |
 | angmax | 13     | maximum angle difference, $\theta_{f}-\theta_{t}$ (degrees)  |
 
 4. Generator Cost Data
 
-   | Name     | Column | Description                                                  |
-   | -------- | ------ | ------------------------------------------------------------ |
-   | Model    | 1      | cost model, 1 = piecewise linear, 2 = polynomial (quadratic polynomial, usually) |
-   | startup  | 2      | startup cost in US dollars                                   |
-   | shutdown | 3      | shutdown cost in US dollars                                  |
-   | Ncost    | 4      | number of cost coefficients for polynomial cost function, or number of data points for piecewise linear |
-   | cost     | 5      | parameters defining total cost function f(p) begin in this column, units of f and p are \$/hr and MW (or MVAr), respectively<br>(MODEL = 1) -> $p_{0}, f_{0}, p_{1}, f_{1}, \ldots, p_{n}, f_{n}$ <br/>where $p_{0}<p_{1}<\cdots<p_{n}$ and the cost $f(p)$ is defined by the coordinates $\left(p_{0}, f_{0}\right),\left(p_{1}, f_{1}\right), \ldots,\left(p_{n}, f_{n}\right)$of the end/break-points of the piecewise linear cost.<br>(MODEL = 2) -> $c_{n}, \dots, c_{1}, c_{0}$<br/>$n + 1$ coefficients of $n$-th order polynomial cost, starting with<br/>highest order, where cost is $f(p)=c_{n} p^{n}+\cdots+c_{1} p+c_{0}$ |
+| Name     | Column | Description                                                  |
+| -------- | ------ | ------------------------------------------------------------ |
+| Model    | 1      | cost model, 1 = piecewise linear, 2 = polynomial (quadratic polynomial, usually) |
+| startup  | 2      | startup cost in US dollars                                   |
+| shutdown | 3      | shutdown cost in US dollars                                  |
+| Ncost    | 4      | number of cost coefficients for polynomial cost function, or number of data points for piecewise linear |
+| cost     | 5      | parameters defining total cost function f(p) begin in this column, units of f and p are US dollars/hr and MW (or MVAr), respectively<br>(MODEL = 1) -> $p_{0}, f_{0}, p_{1}, f_{1}, \ldots, p_{n}, f_{n}$ <br/>where $p_{0}<p_{1}<\cdots<p_{n}$ and the cost $f(p)$ is defined by the coordinates $\left(p_{0}, f_{0}\right),\left(p_{1}, f_{1}\right), \ldots,\left(p_{n}, f_{n}\right)$of the end/break-points of the piecewise linear cost.<br>(MODEL = 2) -> $c_{n}, \dots, c_{1}, c_{0}$<br/>$n + 1$ coefficients of $n$-th order polynomial cost, starting with<br/>highest order, where cost is $f(p)=c_{n} p^{n}+\cdots+c_{1} p+c_{0}$ |
 
 ## File List
 
-case5
- |-- brch.dat
- |-- bus.dat
- |--gen.dat
- |--gencost.dat
-case9
-case14
-case33bw
-case39
-case57
-case118
-case300 (**Note that**: the Matpower case300 data does not numbering BUS_I from 1 to 300, so, I renumbering it)
+[case5](https://github.com/itaoxiaoran/power-system-optimization/blob/master/Casefile/getDataFram.py)  
+ |-- [brch.dat](https://github.com/itaoxiaoran/power-system-optimization/blob/master/Casefile/case5/brch.dat)  
+ |-- [bus.dat](https://github.com/itaoxiaoran/power-system-optimization/blob/master/Casefile/case5/bus.dat)  
+ |--[gen.dat](https://github.com/itaoxiaoran/power-system-optimization/blob/master/Casefile/case5/gen.dat)  
+ |--[gencost.dat](https://github.com/itaoxiaoran/power-system-optimization/blob/master/Casefile/case5/gencost.dat)  
+[case9](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case9)  
+[case14](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case14)  
+[case33bw](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case33bw)  
+[case39](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case39)  
+[case57](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case57)  
+[case118](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case118)  
+[case300](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case300) (**Note that**: the Matpower case300 data does not numbering **BUS_I** from 1 to 300, so, I renumbering it)  
 
 ## Code List
 
+[getDataFrame.py](Casefile/getDataFram.py) - a Python Programing
 
+[write2csv.m](https://github.com/itaoxiaoran/power-system-optimization/blob/master/Casefile/write2csv.m) - a MATLAB M-File
 
 ## How to Use the Case File Data
 
-First, you should clone **getDataFrame.py** and the **Case File Data**.
+First, you should clone [**getDataFrame.py**](https://github.com/itaoxiaoran/power-system-optimization/blob/master/Casefile/getDataFram.py) and the **Case File Data**.
 
 Run with Python Console, and use this code as following:
 
@@ -121,23 +137,23 @@ filePath = 'C:/case5/'
 bus_df, gen_df, brch_df, gencost_df = getDataFrame(path=filePath)
 ```
 
-And, you will see the bus_df, gen_df, brch_df, gencost_df in your Python Console
+And, you will see the *bus_df*, *gen_df*, *brch_df*, *gencost_df* in your Python Console
 
-bus_df:
+- bus_df:
 
-![](C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\img\bus_df.jpg)
+![bus_df](img/bus_df.jpg)
 
-gen_df:
+- gen_df:
 
-![gen_df](C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\img\gen_df.png)
+![gen_df](img/gen_df.png)
 
-brch_df:
+- brch_df:
 
-![brch_df](C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\img\brch_df.png)
+![brch_df](img/brch_df.png)
 
-gencost_df:
+- gencost_df:
 
-![gencost_df](C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\img\gencost_df.png)
+![gencost_df](img/gencost_df.png)
 
 ## How to Transferring Matpower Case File to .csv by Yourself
 
@@ -158,15 +174,15 @@ filePath = 'C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile
 
 You will get the dat file like this:
 
- ![case](C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\img\case.png)
+ ![case](img/case.png)
 
 In any folder, you will get:
 
-![casedetail](C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\img\casedetail.png)
+![casedetail](/img/casedetail.png)
 
 The case5 DAT file are :
 
-![case5details](C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\img\case5details.jpg)
+![case5details](img/case5details.jpg)
 
 ## Module Required
 
