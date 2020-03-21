@@ -88,7 +88,7 @@ the **Transferring Matpower Case File to .csv** can help you use the Matpower ca
 | rateA  | 6      | MVA rating A (long term rating), set to 0 for unlimited      |
 | rateB  | 7      | MVA rating B (short term rating), set to 0 for unlimited     |
 | rateC  | 8      | MVA rating C (emergency rating), set to 0 for unlimited      |
-| ratio  | 9      | transformer off nominal turns ratio, (taps at "from" bus, impedance at "to" bus, i.e. if $r = x = b = 0$, ![](http://latex.codecogs.com/gif.latex?\\tap =\frac{V_i}{V_j}) |
+| ratio  | 9      | transformer off nominal turns ratio, (taps at "from" bus, impedance at "to" bus, i.e. if $r = x = b = 0$, $tap=|V_i|/|V_j|$) |
 | angle  | 10     | transformer phase shift angle (degrees), positive -> delay   |
 | status | 11     | initial branch status, 1 = in-service, 0 = out-of-service    |
 | angmin | 12     | minimum angle difference, $\theta_{f}-\theta_{t}$ (degrees)  |
