@@ -1,4 +1,4 @@
-# Transferring Matpower Case File to .csv
+# Transferring Matpower Case File to CSV Format
 
 > Version: 0.0.1  
 > Author: itaoxiaoran  
@@ -16,7 +16,7 @@
 
 - [How to Use the Case File Data](#how-to-use-the-case-file-data)
 
-- [How to Transferring Matpower Case File to .csv by Yourself](#how-to-transferring-matpower-case-file-to-csv-by-yourself)
+- [How to Transferring Matpower Case File to CSV Format by Yourself](#how-to-transferring-matpower-case-file-to-csv-format-by-yourself)
 
 - [Module Required](#module-required)
 
@@ -155,7 +155,7 @@ And, you will see the *bus_df*, *gen_df*, *brch_df*, *gencost_df* in your Python
 
 ![gencost_df](img/gencost_df.png)
 
-## How to Transferring Matpower Case File to .csv by Yourself
+## How to Transferring Matpower Case File to CSV Format by Yourself
 
 If you have MATLAB and install Matpower correctly, you can use the write2csv.m MATLAB M-File
 

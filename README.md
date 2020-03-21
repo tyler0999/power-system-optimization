@@ -10,38 +10,43 @@
 
 ## Contents
 
-- [x] [Transferring Matpower Case File to .csv](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile)
-- [ ] [DC Power Flow](https://github.com/itaoxiaoran/power-system-optimization/tree/master/DCpowerflow)
-- [ ] [AC Power Flow](https://github.com/itaoxiaoran/power-system-optimization/tree/master/ACpowerflow)
-- [ ] [Multi-Object Optimal Power Flow](https://github.com/itaoxiaoran/power-system-optimization/tree/master/MultiObjPowerFlow)
+- [x] [Transferring Matpower Case File to CSV format](#transferring-matpower-case-file-to-csv-format)
+- [ ] [DC Power Flow](#dc-power-flow)
+- [ ] [AC Power Flow](ac-power-flow)
+- [ ] [DC Optimal Power Flow](#dc-optimal-power-flow)
+- [ ] [AC Optimal Power Flow](#ac-optimal-power-flow)
+- [ ] [Multi-Objective Optimal Power Flow](#multi-objective-optimal-power-flow)
+- [ ] [Small Amount of Real Active Load Data](#small-amount-of-real-active-load-data)
+- [ ] [Load Forecasting](#load-forecasting)
+- [ ] [Uniform Pricing Market Clearance](#uniform-pricing-market-clearance)
+- [ ] [Nodal Pricing Market Clearance](#nodal-pricing-market-clearance)
+- [ ] [Joint Energy and Reserve Market Clearance](#joint-energy-and-reserve-market-clearance)
+- [ ] [Quick start Power System Optimization by Pyomo](#quick-start-power-system-optimization-by-pyomo)
+- [ ] [Some Useful Tools](#some-useful-tools)
 
-- [ ] [A Small Amount of  Real Active Load Data](https://github.com/itaoxiaoran/power-system-optimization/tree/master/RealActiveLoadData)
-
-- [ ] [Uniform Pricing Market Clearance](https://github.com/itaoxiaoran/power-system-optimization/tree/master/ClearingUniformPricingMarket)
-
-- [ ] [Nodal Pricing Market Clearance](https://github.com/itaoxiaoran/power-system-optimization/tree/master/ClearingNodalPricingMarket)
-- [ ] [Joint Energy and Reserve Market Clearance](https://github.com/itaoxiaoran/power-system-optimization/tree/master/ClearingJointEnergyandReserveMarket)
-
-## This is  an ABSOLUTE  preview !
+## This is an ABSOLUTE  preview !
 
 The following functions have been developed and are waiting to be sorted out and summarized .  
 Functions | Programming Language or File Format | Expected Release Time | Actual Release Time 
 -|-|-|-
 DC power flow | Python | 2020.5 | 
 AC power flow| Python | 2020.5 |
-Multi-Obj optimal power flow | Python | 2020.5 |
-Transferring Matpower case file to .csv | .csv               | 2020.4|2020.3.21
-A small amount of real active load data | .csv               | 2020.6 |
+DC optimal power flow| Python | 2020.12 |
+AC optimal power flow| Python | 2020.12 |
+Multi-objective optimal power flow | Python | 2020.5 |
+Transferring Matpower case file to CSV format | CSV Format, Python, MATLAB | 2020.4|2020.3.21
+Small amount of real active load data | .csv               | 2020.6 |
+Load forecasting |  |  |
 Uniform pricing market clearance | Python             | 2020.8 |
  Nodal pricing market clearance | Python             | 2020.8 |
 Joint energy and reserve market clearance | Python             | 2020.8 |
+Quick start Power System Optimization by Pyomo | Python | 2020.10 |
+Some Useful Tools | Python | 2020.12 |
  My first Blog for this project | ——                 | May be blew you off |
 
-​	
+If you have any other demands or suggestions, you can [**pull the Issues**](https://github.com/itaoxiaoran/power-system-optimization/issues) or email me. 
 
-​	If you have any other demands or suggestions, you can [**pull the Issues**](https://github.com/itaoxiaoran/power-system-optimization/issues) or email me. 
-
-## Before use and read most page in this repository.
+## Before use and read most pages in this repository.
 
 ​	If you cannot see the formula normally as following:
 $$
@@ -62,6 +67,62 @@ $$
    `pip install geatpy`
 
 3. **Any Solvers** supported by Pyomo for solving LP problems, i.e. glpk, gurobi, cplex, etc.
+
+
+
+## Transferring Matpower case file to CSV format
+
+Start directly
+
+## DC Power Flow
+
+Start directly
+
+## AC Power Flow
+
+Start directly
+
+## DC Optimal Power Flow
+
+Start directly
+
+## AC Optimal Power Flow
+
+Start directly
+
+## Multi-objective Optimal Power Flow
+
+Start directly
+
+## Small Amount of Real Active Load Data
+
+Start directly
+
+## Load Forecasting
+
+Start directly
+
+## Uniform pricing market clearance
+
+Start directly
+
+## Nodal pricing market clearance
+
+Start directly
+
+## Joint energy and reserve market clearance
+
+Start directly
+
+## Quick start Power System Optimization by Pyomo
+
+Start directly
+
+## Some Useful Tools
+
+Start directly
+
+
 
 
 
