@@ -88,7 +88,7 @@ the **Transferring Matpower Case File to .csv** can help you use the Matpower ca
 | rateA  | 6      | MVA rating A (long term rating), set to 0 for unlimited      |
 | rateB  | 7      | MVA rating B (short term rating), set to 0 for unlimited     |
 | rateC  | 8      | MVA rating C (emergency rating), set to 0 for unlimited      |
-| ratio  | 9      | transformer off nominal turns ratio, (taps at "from" bus, impedance at "to" bus, i.e. if $r = x = b = 0$, $tap =\frac{|V_f|}{|V_t|}$ |
+| ratio  | 9      | transformer off nominal turns ratio, (taps at "from" bus, impedance at "to" bus, i.e. if $r = x = b = 0$, ![](http://latex.codecogs.com/gif.latex?\\tap =\frac{V_i}{V_j}) |
 | angle  | 10     | transformer phase shift angle (degrees), positive -> delay   |
 | status | 11     | initial branch status, 1 = in-service, 0 = out-of-service    |
 | angmin | 12     | minimum angle difference, $\theta_{f}-\theta_{t}$ (degrees)  |
@@ -117,7 +117,7 @@ the **Transferring Matpower Case File to .csv** can help you use the Matpower ca
 [case39](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case39)  
 [case57](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case57)  
 [case118](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case118)  
-[case300](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case300) (**Note that**: the Matpower case300 data does not numbering **BUS_I** from 1 to 300, so, I renumbering it)  
+[case300](https://github.com/itaoxiaoran/power-system-optimization/tree/master/Casefile/case300) (**Note that**: the Matpower case300 data does not numbering **BUS_I** from 1 to 300, so, I renumber it)  
 
 ## Code List
 
@@ -168,11 +168,7 @@ str_caseName = 'case30';
 filePath = 'C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\';
 ```
 
-str_caseName = 'case30';
-
-filePath = 'C:\Users\Ran Tao\Documents\GitHub\power-system-optimization\Casefile\'
-
-You will get the dat file like this:
+You will get the DAT file like this:
 
  ![case](img/case.png)
 
