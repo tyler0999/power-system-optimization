@@ -11,7 +11,7 @@
 ## Contents
 
 - [x] [Transferring Matpower Case File to CSV format](#transferring-matpower-case-file-to-csv-format)
-- [ ] [DC Power Flow](#dc-power-flow)
+- [x] [DC Power Flow](#dc-power-flow)
 - [ ] [AC Power Flow](ac-power-flow)
 - [ ] [DC Optimal Power Flow](#dc-optimal-power-flow)
 - [ ] [AC Optimal Power Flow](#ac-optimal-power-flow)
@@ -29,7 +29,7 @@
 The following functions have been developed and are waiting to be sorted out and summarized .  
 Functions | Programming Language or File Format | Expected Release Time | Actual Release Time 
 -|-|-|-
-DC power flow | Python | 04/2020 | 
+DC power flow | Python | 04/2020 | 03/23 2020 
 AC power flow| Python | 04/2020 |
 DC optimal power flow| Python | 12/2020 |
 AC optimal power flow| Python | 12/2020               |
@@ -76,57 +76,87 @@ $$
 
 the **Transferring Matpower Case File to CSV Foramt** can help you use the Matpower case file in Python.
 
-> **getDataFrame.py** for get the data in Python  
-> **write2csv.m** for tansferring the case file to CSV format file  
+> **getDataFrame.py** for getting the power system data in Python  
+> **write2csv.m** for transferring the case file to CSV format file  
 > **Required**: numpy, pandas, sys, MATLAB, Matpower    
 
 Start directly: [click here](https://github.com/itaoxiaoran/transfer-matpower-case-file)
 
 ## DC Power Flow
 
+**HAVE BEEN DONE: 03/23 2020**
+
+the DC Power Flow can help you to calculate the DC power flow in Python.
+
+> **getDataFrame.py** for getting the power system data in Python  
+> **dcpf.m** for calculating the DC power flow in Python  
+> **Required**: numpy, pandas, sys, prettytable(optional)  
+
 Start directly: [click here](https://github.com/itaoxiaoran/dc-power-flow)
 
 ## AC Power Flow
+
+waiting...
 
 Start directly: [click here](https://github.com/itaoxiaoran/ac-power-flow)
 
 ## DC Optimal Power Flow
 
+waiting...
+
 Start directly: [click here](https://github.com/itaoxiaoran/dc-optimal-power-flow)
 
 ## AC Optimal Power Flow
+
+waiting...
 
 Start directly: [click here](https://github.com/itaoxiaoran/ac-optimal-power-flow)
 
 ## Multi-objective Optimal Power Flow
 
+waiting...
+
 Start directly: [click here](https://github.com/itaoxiaoran/multi-objective-power-flow)
 
 ## Small Amount of Real Active Load Data
+
+waiting...
 
 Start directly: [click here](https://github.com/itaoxiaoran/real-load-data)
 
 ## Load Forecasting
 
+waiting...
+
 Start directly: [click here](https://github.com/itaoxiaoran/load-forecasting)
 
 ## Uniform pricing market clearance
+
+waiting...
 
 Start directly: [click here](https://github.com/itaoxiaoran/uniform-pricing-electricity-market)
 
 ## Nodal pricing market clearance
 
+waiting...
+
 Start directly: [click here](https://github.com/itaoxiaoran/nodal-pricing-electricity-market)
 
 ## Joint energy and reserve market clearance
+
+waiting...
 
 Start directly: [click here](https://github.com/itaoxiaoran/joint-energy-and-reserve-electricity-market)
 
 ## Quick start Power System Optimization by Pyomo
 
+waiting...
+
 Start directly: [click here](https://github.com/itaoxiaoran/quick-start-power-system-optimization-by-Pyomo)
 
 ## Some Useful Tools
+
+waiting...
 
 Start directly: [click here](https://github.com/itaoxiaoran/useful-tools-for-power-system)
 
